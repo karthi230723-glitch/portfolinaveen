@@ -13,6 +13,8 @@
     <!-- Font Awesome CSS CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- ******************css************************************* -->
+     <link rel="stylesheet" href="css1.css">
 
 
     <style>
@@ -185,8 +187,8 @@
         }
 
 
-        @media (max-width:600px) {
-            #vcode{
+        @media (max-width:564px) {
+            /* #vcode{
                 margin-top: 10px;
 
             }
@@ -196,15 +198,15 @@
 
             #boostrap {
                 margin-top: 12px;
-            }
+            } */
 
-            #hsc {
+            /* #hsc {
                 margin-top: 10px;
             }
 
             #ug {
                 margin-top: 20px;
-            }
+            } */
             #awsimg{
                width:160px;
                 
@@ -237,31 +239,6 @@
         }
 
 /* ********************************************************* */
-    .custom-toggler {
-      border: none;
-      background: transparent;
-      outline: none;
-    }
-
-    .custom-toggler .bar {
-      display: block;
-      width: 30px;
-      height: 3px;
-      margin: 6px auto;
-      transition: all 0.4s ease-in-out;
-      background-color: white;
-    }
-
-    /* Animation when active */
-    .custom-toggler.active .bar:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px);
-    }
-    .custom-toggler.active .bar:nth-child(2) {
-      opacity: 0;
-    }
-    .custom-toggler.active .bar:nth-child(3) {
-      transform: rotate(-45deg) translate(6px, -6px);
-    }
 
 
 
@@ -288,51 +265,48 @@
         <div class="particle"></div>
     </div>
     <!-- ****************nav bar*************************** -->
-    <nav class="navbar navbar-expand-lg navbar-light  ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <h2 class="content "><span style="color: red;">
-                        < </span>Naveen kumar/s<span style="color: red;">></span></h2>
-            </a>
-            <!-- <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="fas fa-bars-staggered fa-2x text-white"></span>
-            </button> -->
-             <button class="custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto gap-4 me-4 ">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white  content" aria-current="page" href="#aboutme">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white content " href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white content " href="#Education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white content" href="#certification">Certification</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white content" href="#contact">Contact Me</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+     <!-- ****************Navbar*************************** -->
+<nav class="navbar navbar-expand-lg navbar-light  shadow ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <h2 class="content text-white">
+        <span style="color: red;"><</span>Naveen Kumar/s<span style="color: red;">></span>
+      </h2>
+    </a>
+
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fas fa-bars-staggered fa-2x text-white"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto gap-4 me-4">
+        <li class="nav-item">
+          <a class="nav-link active text-white content" aria-current="page" href="#aboutme">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white content" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white content" href="#Education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white content" href="#certification">Certification</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white content" href="#contact">Contact Me</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
     <!-- ************************************************** -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Add toggle animation
-    const toggler = document.querySelector('.custom-toggler');
-    toggler.addEventListener('click', function () {
-      this.classList.toggle('active');
-    });
-  </script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  
      
 
     <!-- ************************************main contents****************************** -->
@@ -341,28 +315,28 @@
         <div class="container ">
             <div class="row ">
                 <div class="col-lg-6 col-sm-12 ">
-                    <div class="card h-100  d-flex justify-content-center align-items-center p-3 rounded ">
-                        <img src="assets/images/erasebg-transformed.png" alt="" class=" img-fluid rounded w-50 border blur">
+                    <div class="card h-100  d-flex justify-content-center align-items-center p-3 rounded  ">
+                        <img src="assets/images/erasebg-transformed.png" alt="" class=" img-fluid rounded w-50 border blur glow-img  ">
 
 
                     </div>
 
                 </div>
                 <div class="col-lg-6 col-sm-12 gap-2">
-                    <div class="card h-100  d-flex justify-content-center align-items-center p-3 mt-5">
-                        <h4 class="card-title">hai..,i am</h4>
-                        <h1 class="card-text ">NAVEEN KUMAR S</h1>
-                        <p class="card-text text-muted">front-end-developer</p>
+                    <div class="card h-100  d-flex justify-content-center align-items-center p-3 mt-5 ">
+                        <h4 class="card-title hai ">Hey..,I Am</h4>
+                        <h1 class="card-text  typing-text glow-hover  ">NAVEEN KUMAR S</h1>
+                        <p class="card-text text-muted ">Front-End-Developer</p>
                         <div>
-                             <a href="https://github.com/dukenaveen3034-cloud" class="card-link "><i class="fab fa-github fa-2x text-white"></i></a>
-                             <a href="https://www.linkedin.com/in/naveen-kumar-69804534b" class="card-link"><i class="fab fa-linkedin fa-2x text-white"></i></a>
-                             <a href="https://www.instagram.com/itz_leo003?igsh=MWJydGYzbXZpcmlhYw==&utm_source=ig_contact_invite " class="card-link"><i class="fab fa-instagram fa-2x text-white"></i></a>
+                             <a href="https://github.com/dukenaveen3034-cloud" class="card-link "><i class="fab fa-github fa-2x text-white orbit-hover"></i></a>
+                             <a href="https://www.linkedin.com/in/naveen-kumar-69804534b" class="card-link"><i class="fab fa-linkedin fa-2x text-white orbit-hover"></i></a>
+                             <a href="https://www.instagram.com/itz_leo003?igsh=MWJydGYzbXZpcmlhYw==&utm_source=ig_contact_invite " class="card-link"><i class="fab fa-instagram fa-2x text-white orbit-hover"></i></a>
 
                         </div>
                             <!-- ************************************************************modal resume****** -->
                              <!-- Button to trigger modal -->
                              <span class="d-flex justify-content-center align-items-center mt-4">
-                                <button type="button" class="btn border text-white blur " data-bs-toggle="modal"
+                                <button type="button" class="btn border text-white blur glow-btn " data-bs-toggle="modal"
                                 data-bs-target="#resume">
                                 Check Resume
                             </button>
@@ -428,67 +402,55 @@
 
     <!-- ***********************************************skills************************************************ -->
     <section id="skills">
-        <div class="container p-5  mt-5 ">
-            <h3 class="content p-5">skills</h3>
-            <div class="row">
-                <div class="col-6 col-lg-3 col-md-4 ">
-                    <div class="card h-100 blur   p-3 ">
-                        <!-- <img src="assets/images/html.png" alt="" class="img-fluid card-img-top w-25 "> -->
-                        <i class="fa-brands fa-html5" aria-hidden="true" style="font-size: 3rem;"></i>
-                        <h2 class="text-white card-title">Html</h2>
-                    </div>
-                </div>
-                <div class="col-6  col-lg-3 col-md-4 ">
-                    <div class="card blur h-100 p-3 d-block ">
-                        <i class="fa-brands fa-css3-alt" aria-hidden="true" style="font-size: 3rem;"></i>
-                        <!-- <img src="assets/images/css-3.png" alt="" class="img-fluid  card-img-top w-25 "> -->
-                        <h2 class="text-white card-title">Css</h2>
-                    </div>
+  <div class="container p-5 mt-5">
+    <h3 class="content p-5 text-center">Skills</h3>
 
-
-                </div>
-                <div class="col-6  col-lg-3 col-md-4 ">
-                    <div class="card  h-100 p-3 d-block blur " id="js">
-                        <i class="fa-brands fa-js" aria-hidden="true" style="font-size: 3rem;"></i>
-                        <h2 class="text-white card-title">Java-Script</h2>
-                    </div>
-
-
-                </div>
-                <div class="col-6 col-lg-3 col-md-4 ">
-                    <div class="card  h-100 p-3 d-block  blur" id="boostrap">
-                        <!-- <img src="assets/images/java-script.png" alt="" class="img-fluid  card-img-top w-25 "> -->
-                        <!-- <i class="bi bi-bootstrap-fill" style="font-size: 3rem; color: #7952b3;"></i> -->
-                        <i class="fa-brands fa-bootstrap" aria-hidden="true" style="font-size: 3rem;"></i>
-                        <h2 class="text-white card-title">Boostrap</h2>
-                    </div>
-
-
-                </div>
-                <div class="col-6 col-lg-3 col-md-4  ">
-                    <div class="card blur h-100 p-3 d-block mt-4 " id="Tailwind">
-                        <!-- <img src="assets/images/java-script.png" alt="" class="img-fluid  card-img-top w-25 "> -->
-                        <i class="devicon-tailwindcss-plain text-white" style="font-size: 3rem;"></i>
-                        <h2 class="text-white card-title">Tailwind</h2>
-                    </div>
-
-
-                </div>
-                <div class="col-6 col-lg-3 col-md-4 ">
-                    <div class="card blur h-100 p-3 d-block mt-4 " id="mysql">
-                        <!-- <img src="assets/images/java-script.png" alt="" class="img-fluid  card-img-top w-25 "> -->
-                        <i class="devicon-mysql-plain text-white" style="font-size: 3rem;"></i>
-                        <h2 class="text-white card-title">My-Sql</h2>
-                    </div>
-
-
-                </div>
-
-            </div>
-
+    <!-- First row: 4 cards -->
+    <div class="row g-4 row-cols-2 row-cols-sm-2 row-cols-lg-4">
+      <div class="col">
+        <div class="card h-100 blur p-3 html1">
+          <i class="fa-brands fa-html5" style="font-size: 3rem;"></i>
+          <h2 class="text-white card-title">HTML</h2>
         </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 blur p-3 css1">
+          <i class="fa-brands fa-css3-alt" style="font-size: 3rem;"></i>
+          <h2 class="text-white card-title">CSS</h2>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 blur p-3 js1">
+          <i class="fa-brands fa-js" style="font-size: 3rem;"></i>
+          <h2 class="text-white card-title">JavaScript</h2>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 blur p-3 bootstrap1">
+          <i class="fa-brands fa-bootstrap" style="font-size: 3rem;"></i>
+          <h2 class="text-white card-title">Bootstrap</h2>
+        </div>
+      </div>
+    </div>
 
-    </section>
+    <!-- Second row: 2 cards -->
+    <div class="row g-4 mt-4 row-cols-2 row-cols-sm-2 row-cols-lg-4 justify-content-center">
+      <div class="col">
+        <div class="card h-100 blur p-3 tailwind1">
+          <i class="fas fa-wind" style="font-size: 3rem;"></i>
+          <h2 class="text-white card-title">Tailwind</h2>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 blur p-3 mysql1">
+          <i class="fas fa-database" style="font-size: 3rem;"></i>
+          <h2 class="text-white card-title">MySQL</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     <!-- *************************************background*********************************************************** -->
     <div class="nebula-container">
         <div class="nebula-bg"></div>
@@ -599,7 +561,7 @@
     </div>
     <!-- *********************************************Certificates**************************************** -->
     <section id="certification">
-             <h3 class="content p-5">Certification</h3>
+             <h3 class="content animated-header p-5">Certification</h3>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6">
@@ -733,25 +695,25 @@
 
     <!-- *************************************contact me************************************ -->
      <section id="contact" class="mt-5">
-        <h3 class="content p-5 ">Contact Me</h3>
+        <h3 class="content p-5  animated-header">Contact Me</h3>
         <div class="container blur p-5   " style="width:fit-content;">
             <form action="" method="get">
                 <div class="name">
-                    <label for="">Your Name</label> <br>
-                    <input type="text" id="name" class="form-control" name="name">
+                    <label for="">YourName  <i class="fas fa-user input-icon icon-name"></i></label>
+                    <input type="text" id="name" class="form-control form-input" name="name">
                 </div>
                 <div class="name">
-                    <label for="">Your Email</label> <br>
-                    <input type="email" class="form-control" id="email" name="email">
+                    <label for="">Your Email <i class="fas fa-envelope input-icon icon-email"></i></label> <br>
+                    <input type="email" class="form-control form-input" id="email" name="email">
 
                 </div>
                  <div class="name">
-                    <label for="">Message</label> <br>
-                    <textarea name="msg" class="form-control" id="msg"></textarea>
+                    <label for="">Message<i class="fas fa-comment-dots input-icon icon-msg"></i></label> <br>
+                    <textarea name="msg" class="form-control form-input" id="msg"></textarea>
 
                 </div>
                 <div class="name d-flex justify-content-center align-items-center mt-4">
-                    <input type="button" name="btn1" id="btn1" class="btn btn-info" value="send">
+                    <input type="button" name="btn1" id="btn1" class="btn btn-info btn-gradient" value="send">
 
                 </div>
                 

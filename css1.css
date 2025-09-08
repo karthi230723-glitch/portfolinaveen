@@ -1,0 +1,342 @@
+
+/* Glowing Button Effect */
+.glow-btn {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glow-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+}
+
+.glow-btn:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.glow-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+/* Image Glow Effect */
+.glow-img {
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.glow-img:hover {
+    filter: brightness(1.2) drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+    transform: scale(1.1);
+   
+}
+.orbit-hover {
+    transition: transform 0.4s ease;
+    display: inline-block;
+}
+
+.orbit-hover:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+
+
+
+/* typing effect***************** */
+.typing-text {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid white;
+    width: 0;
+    animation: typing 3s steps(20, end) forwards, blink 0.75s step-end infinite;
+    animation-delay: 0.6s;
+}
+.glow-hover {
+    background: linear-gradient(90deg, #0d6efd, #6f42c1, #20c997);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 0.5s ease;
+  background-size: 200% auto;
+  display: inline-block;
+}
+.glow-hover:hover {
+ background-position: right center;
+}
+.hai{
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+
+@keyframes typing {
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+@media (max-width: 576px) {
+    .typing-text {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+
+
+/* **************************cards*********************** */
+/* Base card style */
+#skills .card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  cursor: pointer;
+  color: white;
+}
+
+/* Hover animation */
+#skills .card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* ICON animation */
+#skills .card i {
+  transition: transform 0.4s ease;
+}
+#skills .card:hover i {
+  transform: rotate(15deg) scale(1.2);
+}
+#skills .card   .i1 {
+  transition: transform 0.4s ease;
+}
+#skills .card:hover .i1 {
+  transform: rotate(15deg) scale(1.2);
+}
+
+
+/* Text animation */
+#skills .card-title {
+  transition: text-shadow 0.4s ease, color 0.4s ease;
+}
+#skills .card:hover .card-title {
+  text-shadow: 0 0 12px rgba(255,255,255,0.8);
+}
+
+/* --- Linear Gradient Colors --- */
+#skills .html1.card:hover {
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  box-shadow: 0 8px 25px rgba(255, 81, 47, 0.6);
+}
+
+#skills .css1.card:hover {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  box-shadow: 0 8px 25px rgba(30, 60, 114, 0.6);
+}
+
+#skills .js1.card:hover {
+  background: linear-gradient(135deg, #f7971e, #ffd200);
+  box-shadow: 0 8px 25px rgba(247, 151, 30, 0.6);
+}
+
+#skills .bootstrap1.card:hover {
+  background: linear-gradient(135deg, #7028e4, #e5b2ca);
+  box-shadow: 0 8px 25px rgba(112, 40, 228, 0.6);
+}
+
+#skills .tailwind1.card:hover {
+  background: linear-gradient(135deg, #06beb6, #48b1bf);
+  box-shadow: 0 8px 25px rgba(6, 190, 182, 0.6);
+}
+
+#skills .mysql1.card:hover {
+  background: linear-gradient(135deg, #1c92d2, #f2fcfe);
+  box-shadow: 0 8px 25px rgba(28, 146, 210, 0.6);
+}
+
+/* Fade-in animation */
+#skills .card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+#skills .col-6:nth-child(1) .card { animation-delay: 0.2s; }
+#skills .col-6:nth-child(2) .card { animation-delay: 0.4s; }
+#skills .col-6:nth-child(3) .card { animation-delay: 0.6s; }
+#skills .col-6:nth-child(4) .card { animation-delay: 0.8s; }
+#skills .col-6:nth-child(5) .card { animation-delay: 1s; }
+#skills .col-6:nth-child(6) .card { animation-delay: 1.2s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* ***************************************navbar eefects******************** */
+/* Navbar background */
+.navbar.bg-dark {
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease;
+}
+
+/* Hover effect on links */
+.navbar-nav .nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: #ff0000;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff0000;
+  transform: scale(1.05);
+}
+
+/* Navbar brand hover */
+.navbar-brand:hover h2 {
+  transform: scale(1.1);
+  color: #ff0000;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Toggler button hover */
+.navbar-toggler:hover span {
+  color: #ff0000;
+  transform: rotate(90deg);
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+
+/* Collapse animation for mobile */
+.navbar-collapse {
+  transition: all 0.5s ease;
+}
+
+
+/* ***********************conatct me************************************ */
+/* Section Header Animation */
+.animated-header {
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: fadeSlideIn 1s forwards;
+}
+
+@keyframes fadeSlideIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Glassmorphic Form */
+.contact-form {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border-radius: 25px;
+  max-width: 600px;
+  margin: auto;
+  padding: 50px 30px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.contact-form:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+/* Inputs Styling */
+.form-input {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  padding-left: 40px;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  box-shadow: 0 0 15px #0dcaf0;
+  background: rgba(255,255,255,0.15);
+}
+
+/* Placeholder */
+.form-input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+
+/* Gradient Send Button */
+.btn-gradient {
+  background: linear-gradient(135deg, #0dcaf0, #6610f2);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 45px;
+  border-radius: 50px;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-gradient:hover {
+  transform: scale(1.08);
+  background: linear-gradient(135deg, #6610f2, #0dcaf0);
+  box-shadow: 0 10px 30px rgba(102,16,242,0.6);
+}
+
+/* Pulse Animation on Send Button */
+.btn-send:hover {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow: 0 0 0 rgba(102,16,242,0.5); }
+  50% { transform: scale(1.05); box-shadow: 0 0 20px rgba(102,16,242,0.5); }
+  100% { transform: scale(1); box-shadow: 0 0 0 rgba(102,16,242,0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-form { padding: 30px 20px; }
+  .input-icon { font-size: 1rem; }
+}
+/* *********************************************************education ****************************** */
+/* Footer Background & Glassmorphic */
+.footer {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  border-top: 2px solid #0dcaf0;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+
